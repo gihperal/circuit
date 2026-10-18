@@ -211,6 +211,7 @@ main{padding:0 max(16px,env(safe-area-inset-right,0px)) 130px max(16px,env(safe-
 .reset{display:none;margin:44px auto 0;background:none;border:0;color:var(--soft);text-decoration:underline;text-underline-offset:3px;font-size:14px;padding:10px}
 .js .reset{display:block}
 .reset.arm{color:var(--ink);font-weight:600}
+.btn.arm{border-color:var(--ink);font-weight:600}
 
 /* ---------- cronômetro ---------- */
 #timer{position:fixed;z-index:38;left:0;right:0;bottom:0;padding:0 max(12px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));pointer-events:none}
@@ -250,7 +251,7 @@ main{padding:0 max(16px,env(safe-area-inset-right,0px)) 130px max(16px,env(safe-
 .ib svg,.wbtn svg,.sb svg,.ii svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .lastv{margin:3px 0 0;font-size:13px;color:var(--hsoft)}
 .lastv:empty{display:none}
-.who{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 10px 0 4px;margin-left:-4px;border:0;border-radius:999px;background:rgba(255,255,255,.08);color:#fff;font:500 15px/1 var(--fd)}
+.who{display:inline-flex;align-items:center;gap:8px;height:32px;padding:0 12px 0 4px;margin-left:-4px;border:0;border-radius:999px;background:rgba(255,255,255,.08);color:#fff;font:500 15px/1 var(--fd)}
 .who svg{width:10px;height:10px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;opacity:.7}
 .av{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--tif);color:var(--navy);font:600 13px/1 var(--fd)}
 .av.m{background:var(--but)}
@@ -586,7 +587,7 @@ main{padding:0 max(16px,env(safe-area-inset-right,0px)) 130px max(16px,env(safe-
 <div class="app">
 <input type="radio" class="vh tr" name="treino" id="t-A" value="A" checked><input type="radio" class="vh tr" name="treino" id="t-B" value="B"><input type="radio" class="vh tr" name="treino" id="t-C" value="C">
 <header class="top"><div class="in">
-  <div class="when"><button type="button" class="who" id="who" aria-label="Trocar de pessoa"><span class="av" aria-hidden="true"></span><span class="wn"></span><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"/></svg></button>
+  <div class="when"><button type="button" class="who" id="who" aria-label="Este celular e ajustes"><span class="av" aria-hidden="true"></span><span class="wn"></span></button>
     <span class="hb"><button type="button" class="ib" data-open="evo" aria-label="Evolução"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 15.5 8 10l3.2 3.2L17 6.5"/><path d="M13 6.5h4v4"/></svg></button><button type="button" class="ib" data-open="cfg" aria-label="Ajustes"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 6h7M15 6h1M4 14h1M9 14h7"/><circle cx="13" cy="6" r="2"/><circle cx="7" cy="14" r="2"/></svg></button></span></div>
   <nav class="tabs" aria-label="Escolha o treino"><label for="t-A" class="tab tab-A"><span class="L">A</span><span class="f">Pernas, peito, tríceps</span><span class="bar"><i data-bar="A"></i></span></label><label for="t-B" class="tab tab-B"><span class="L">B</span><span class="f">Posterior, costas, bíceps</span><span class="bar"><i data-bar="B"></i></span></label><label for="t-C" class="tab tab-C"><span class="L">C</span><span class="f">Glúteos e ombros</span><span class="bar"><i data-bar="C"></i></span></label></nav>
 </div></header>
@@ -1022,7 +1023,7 @@ main{padding:0 max(16px,env(safe-area-inset-right,0px)) 130px max(16px,env(safe-
   <svg class="pkm" viewBox="0 0 512 512" aria-hidden="true"><defs><mask id="cm"><path d="M372.6,348.3 A138.0,138.0 0 1 1 372.6,163.7" fill="none" stroke="#fff" stroke-width="64.0" stroke-linecap="round"/></mask></defs><path d="M372.6,348.3 A138.0,138.0 0 1 1 372.6,163.7" fill="none" stroke="#81D8D0" stroke-width="88.0" stroke-linecap="round"/><path d="M372.6,348.3 A138.0,138.0 0 1 1 372.6,163.7" fill="none" stroke="#1B2A41" stroke-width="64.0" stroke-linecap="round"/><g mask="url(#cm)"><path d="M-130.0,228.7 q32.5,-14.0 65.0,0 t65.0,0 q32.5,-14.0 65.0,0 t65.0,0 q32.5,-14.0 65.0,0 t65.0,0 q32.5,-14.0 65.0,0 t65.0,0 q32.5,-14.0 65.0,0 t65.0,0 q32.5,-14.0 65.0,0 t65.0,0 q32.5,-14.0 65.0,0 t65.0,0 V700 H-130.0 Z" fill="#F2C879"/><path d="M-80.0,248.7 q40.0,-18.0 80.0,0 t80.0,0 q40.0,-18.0 80.0,0 t80.0,0 q40.0,-18.0 80.0,0 t80.0,0 q40.0,-18.0 80.0,0 t80.0,0 q40.0,-18.0 80.0,0 t80.0,0 V700 H-80.0 Z" fill="#81D8D0"/></g></svg>
   <p class="pkn">Circuit</p>
   <h2 id="pkt">Quem vai treinar?</h2>
-  <p>Cada uma guarda as próprias séries, cargas e dias. Para trocar depois, toque no nome lá em cima.</p>
+  <p>Escolha quem usa este celular. Ele fica sempre com essa pessoa, com as séries, cargas e avisos dela.</p>
   <div class="pkb">
     <button type="button" class="pp" data-p="giovanna"><span class="av" aria-hidden="true">G</span><span class="pn">Giovanna</span></button>
     <button type="button" class="pp" data-p="mailan"><span class="av m" aria-hidden="true">M</span><span class="pn">Mailan</span></button>
@@ -1065,7 +1066,7 @@ main{padding:0 max(16px,env(safe-area-inset-right,0px)) 130px max(16px,env(safe-
 'use strict';
 var d=document, root=d.documentElement, win=window;
 root.classList.add('js');
-var VERSAO='4.0';
+var VERSAO='4.1';
 var LET=['A','B','C'], NEXT={A:'B',B:'C',C:'A'};
 var PERFIS={giovanna:'Giovanna',mailan:'Mailan'}, PKEY='treino-abc-perfil', DKEY='treino-abc-dica';
 var CAT=win.CAT||{};
@@ -1353,7 +1354,7 @@ d.addEventListener('click',function(e){
     if(b.hasAttribute('data-close')){closeSheet();return}
     if(b.dataset.act){act(b);return}
     if(b.classList.contains('kb')){stepKg(b);return}
-    if(b.id==='who'){openPick(false);return}
+    if(b.id==='who'){openSheet('cfg');return}
     if(b.classList.contains('pp')){choose(b.dataset.p);return}
     if(b.classList.contains('pkx')){closePick();return}
     if(b.classList.contains('th')){openDetail(rowKey(b.closest('.row')),b);return}
@@ -1553,7 +1554,7 @@ function renderCfg(){
       '<div class="imp" hidden></div><p class="note2">Última cópia: '+(st.bk?dia(dkey(new Date(st.bk))):'nenhuma ainda')+'.</p>'+
     '</div></div>'+
     cfgLive()+
-    '<div class="sec"><h3>Pessoa</h3><div class="box"><button type="button" class="btn" data-act="who">Trocar de pessoa</button><p class="note2">Agora: '+(who?PERFIS[who]:'ninguém escolhido')+'. Cada pessoa tem os próprios dados.</p></div></div>'+
+    '<div class="sec"><h3>Este celular</h3><div class="box"><p class="note2" style="margin:0 0 12px">Este celular é '+(who?(who==='mailan'?'da Mailan':'da Giovanna'):'de ninguém ainda')+'. Os treinos, as cargas e os avisos ficam com ela.</p><button type="button" class="btn" data-act="who" data-txt="Trocar de pessoa">Trocar de pessoa</button></div></div>'+
     '<p class="ver">Circuit, versão '+VERSAO+'</p>';
 }
 function act(b){
@@ -1566,7 +1567,7 @@ function act(b){
   if(a==='exp'){exportData();return}
   if(a==='imp'){$('#impf').click();return}
   if(a==='impok'){doImport();return}
-  if(a==='who'){closeSheet();openPick(false);return}
+  if(a==='who'){if(!b.classList.contains('arm')){b.classList.add('arm');b.textContent='Toque de novo para trocar de pessoa';setTimeout(function(){if(b.isConnected){b.classList.remove('arm');b.textContent=b.dataset.txt}},3500);return}closeSheet();openPick(false);return}
   if(a==='day'){selDay=selDay===b.dataset.k?null:b.dataset.k;renderEvo();refocus('[data-act="day"][data-k="'+b.dataset.k+'"]');return}
   if(a==='mprev'||a==='mnext'){evoMonth=new Date(evoMonth.getFullYear(),evoMonth.getMonth()+(a==='mnext'?1:-1),1);selDay=null;renderEvo();refocus('[data-act="'+a+'"]');return}
   if(a==='kg'){openDetail(b.dataset.k,b);return}
